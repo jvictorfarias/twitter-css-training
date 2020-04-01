@@ -1,0 +1,33 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  flex: 1;
+}
+
+.red {
+  background: #f00;
+  order: 1;
+}
+
+.green {
+  background: #0f0;
+  order: 2;
+}
+
+.blue {
+  background: #00f;
+  order: 3;
+}
