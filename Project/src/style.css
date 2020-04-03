@@ -288,13 +288,13 @@ div.wrapper-content aside.profile .followers ul {
   align-items: flex-start;
 }
 
-div.wrapper-content aside.profile .followers ul li {
+div.wrapper-content aside.profile .followers ul li img {
   width: 45px;
   height: 45px;
   background: #d0d5d9;
   border-radius: 50%;
   flex-shrink: 0;
-  margin: 5px 5px 0 0;
+  margin: 3px 0 0 3px;
   flex-grow: 1;
   flex-shrink: 0;
 }
@@ -308,12 +308,10 @@ div.wrapper-content aside.profile .photos ul {
   align-items: flex-start;
 }
 
-div.wrapper-content aside.profile .photos ul li {
+div.wrapper-content aside.profile .photos ul li img {
   width: 80px;
   height: 80px;
-  background: #d0d5d9;
   border-radius: 8px;
-  flex-shrink: 0;
   margin: 5px 5px 0 0;
   flex-grow: 1;
   flex-shrink: 0;
@@ -321,6 +319,97 @@ div.wrapper-content aside.profile .photos ul li {
 
 div.wrapper-content .timeline {
   flex: 1;
+  background: #fff;
+  margin: 10px 20px 0;
+}
+
+div.wrapper-content section.timeline nav {
+  border-bottom: 1px solid #e6ecf0;
+  padding: 10px 15px;
+}
+
+div.wrapper-content section.timeline nav a {
+  text-decoration: none;
+  color: #3bb9e3;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+div.wrapper-content section.timeline nav a:first-child {
+  margin-left: 0;
+}
+
+div.wrapper-content section.timeline nav a.active {
+  color: #000;
+}
+
+div.wrapper-content section.timeline ul.tweets {
+  list-style: none;
+}
+
+div.wrapper-content section.timeline ul.tweets li {
+  border-bottom: 1px solid #e6ecf0;
+  padding: 10px 15px;
+  display: flex;
+}
+
+div.wrapper-content section.timeline ul.tweets li > img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 5px 5px 0 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+div.wrapper-content section.timeline ul.tweets li div.info {
+  margin-left: 10px;
+  flex-direction: column;
+}
+
+div.wrapper-content section.timeline ul.tweets li div.info strong {
+  font-size: 14px;
+  color: #1f2226;
+}
+
+div.wrapper-content section.timeline ul.tweets li div.info strong span {
+  font-size: 13px;
+  font-weight: normal;
+  color: #777777;
+}
+
+div.wrapper-content section.timeline ul.tweets li div.info p {
+  font-size: 14px;
+  color: #1f2326;
+  margin-top: 5px;
+}
+
+div.wrapper-content section.timeline ul.tweets li div.actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+
+div.wrapper-content section.timeline ul.tweets li div.actions a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 12px;
+  color: #777777;
+}
+
+div.wrapper-content section.timeline ul.tweets li div.actions a:first-child {
+  margin-left: 0;
+}
+
+div.wrapper-content section.timeline ul.tweets li div.actions a > img {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px 0 0;
 }
 
 div.wrapper-content aside.widgets {
